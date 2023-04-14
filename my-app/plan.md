@@ -47,4 +47,8 @@
   - create an empty data array
   - with every item that's added to the list, push it in the array
   - add onclick event handler to the deleteButton that removes the li element of the list item
+  - one delete button for every item in the list
+  - when button is clicked function is called to remove element from array
+  - function in the app.js changes the array to display the list without element 
+  - 
 
