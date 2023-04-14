@@ -1,0 +1,25 @@
+- App
+  - Input
+    - text input
+    - add to list button
+  - List
+    - List Item
+      - item text
+      - delete button
+    - List Item
+      - item text
+      - delete button
+    - List Item
+      - item text
+      - delete button
+    - List Item
+      - item text
+      - delete button
+        ...
+    - import all the files within the main app first to link it 
+    -try hard code for each file to test functionality and build from there
+    - make a serperate folder called button and within that have a file called button.js
+    -Delete button would go into input field
+    -in list.js we will have an item and a delete button
+    -in the app.js we will import everything (input field,list,button)
+    - export within every folder made (input field, list, button)
