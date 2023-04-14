@@ -3,7 +3,6 @@ import {useState} from 'react';
 import AddToListButton from './Button/button.js';
 import InputField from './Input/input.js';
 import ListItem from './List/list.js';
-import DeleteThis from './List/deletebutton.js'
 
 function App() {
 
@@ -16,6 +15,7 @@ function App() {
 
   function handleAddToListButton() {
     setList([...list, text]);
+    setText("");
   }
 
   function removeFromList(index) {
@@ -27,11 +27,8 @@ function App() {
     <div className="App">
       <h2>To Do List</h2>
       <AddToListButton handleAddToListButton={handleAddToListButton} />
-      <InputField handleInput={handleInput} />
-      <div>
-      <ListItem key={list.index} list={list} />
-      <DeleteThis removeFromList={() => {removeFromList()}}/>
-      </div>
+      <InputField handleInput={handleInput} value={text} />
+      <ListItem list={list} removeFromList={removeFromList} />
     </div>
   );
 }

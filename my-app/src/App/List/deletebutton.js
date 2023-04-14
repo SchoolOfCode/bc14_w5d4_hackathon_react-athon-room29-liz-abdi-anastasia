@@ -1,8 +1,5 @@
-function DeleteThis ({removeFromList}){
-    { list.map((item) => {
-            return (
-            <button onClick={removeFromList}>Delete</button>
-    )
-}}
+function DeleteThis({ index, removeFromList }) {
+  return <button onClick={() => removeFromList(index)}>Delete</button>;
+}
 
 export default DeleteThis;
