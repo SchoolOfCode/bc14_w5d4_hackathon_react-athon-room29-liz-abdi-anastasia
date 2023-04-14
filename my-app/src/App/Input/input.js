@@ -1,6 +1,6 @@
-function InputField(){
+function InputField({handleInput}) {
     return ( 
-        <input type="text">input</input>
+        <input type="text" onChange={handleInput}></input>
     )
 }
 export default InputField;
